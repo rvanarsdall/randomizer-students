@@ -36,3 +36,23 @@
     transform: rotate(360deg);
   }
 }
+
+.newTeams {
+  font-size: 2em!important;
+}
+
+
+ .spinning-dude {
+   width: 100%;
+ }
+
+ body {
+   height: 100vh;
+   width: 100vw;
+   overflow: hidden;
+ }
+
+
+ .row {
+   margin-top: 2.5em;
+ }
