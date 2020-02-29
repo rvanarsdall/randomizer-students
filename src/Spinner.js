@@ -40,7 +40,10 @@ const SpinnerGuy = (props) => {
                         <TeamDisplay timesViewed={props.timesViewed} setTimesViewed={props.setTimesViewed}></TeamDisplay>
                         <Row>
                             <Col>
-                                <Button color="danger" onClick={() => { props.setIsShowingTeams(!props.isShowingTeams) }}>Go back</Button>
+                                <Button color="primary" onClick={() => { setShowSpinner(!showSpinner) }}>Redo with Same Names</Button>
+                            </Col>
+                            <Col>
+                                <Button color="secondary" disabled onClick={() => { props.setIsShowingTeams(!props.isShowingTeams) }}>Make New Teams</Button>
                             </Col>
                         </Row>
                     </React.Fragment>

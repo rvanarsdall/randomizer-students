@@ -1,5 +1,5 @@
 import React from 'react';
-import {Button} from 'reactstrap'
+import {Button, Input} from 'reactstrap'
 import './App.css';
 import SpinnerGuy from './Spinner';
 
@@ -9,15 +9,19 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
+      <div className="App-header">
         {
           isShowingTeams ?
           // <h1>Hello New Teams</h1>
           <SpinnerGuy timesViewed={timesViewed} setTimesViewed={setTimesViewed} setIsShowingTeams={setIsShowingTeams} isShowingTeams={isShowingTeams}></SpinnerGuy>
           :
-          <Button className="newTeams" color="success" onClick={() => { setIsShowingTeams(!isShowingTeams)}}>Make random teams</Button>
+          <React.Fragment>
+            <Input style={{width: "40vw", fontSize: "24pt"}} type="textarea" placeholder="Enter the names you want to split into teams, seperated by commas" />
+            <br />
+            <Button className="newTeams" color="success" onClick={() => { setIsShowingTeams(!isShowingTeams)}}>Make random teams</Button>
+          </React.Fragment>
         }
-      </header>
+      </div>
     </div>
   );
 }
