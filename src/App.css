@@ -38,21 +38,18 @@
 }
 
 .newTeams {
-  font-size: 2em!important;
+  font-size: 2em !important;
 }
 
+.spinning-dude {
+  width: 100%;
+}
 
- .spinning-dude {
-   width: 100%;
- }
+body {
+  height: 100vh;
+  width: 100vw;
+}
 
- body {
-   height: 100vh;
-   width: 100vw;
-   overflow: hidden;
- }
-
-
- .row {
-   margin-top: 2.5em;
- }
+.row {
+  margin-top: 2.5em;
+}
